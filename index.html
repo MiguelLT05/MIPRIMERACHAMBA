@@ -1,11 +1,21 @@
 <html>
-    <title>Clase 01</title>
+    <title>Laboratorio 01</title>
     <body>
         <script>
-            const num1=1;
-            const num2="3";
-            const num3 = num1+num2;
-            console.log(num3);
+            const triangulos = [
+                {"Base": 5, "Altura": 6},
+                {"Base": 4, "Altura": 7},
+                {"Base": 10, "Altura": 3},
+                {"Base": 9, "Altura": 3},
+                {"Base": 8, "Altura": 2}
+            ];
+            function areaTriangulo(base, altura){
+                var area = (base*altura)/2;
+                console.log("Base: "+base+ " * ", "Altura: "+altura+ " = ", "Area: "+area);
+            }
+            triangulos.forEach((e) => {
+                areaTriangulo(e.Base, e.Altura)
+            });
         </script>
     </body>
 </html>
